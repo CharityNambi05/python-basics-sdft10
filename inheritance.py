@@ -16,6 +16,9 @@ class Animal:
     def walk(self):
         print(f"{self.name} is walking")
 
+    def bark(self):
+        print(f"{self.name} is barking")
+
 #create an instance of my class
 animal_one = Animal("Lion", "Yellow")
 
@@ -28,8 +31,10 @@ class Mammal(Animal):
 
 class Dog(Mammal):
     pass
+dog_one=Dog("Rono" ,"Orange")
 
 mammal_one = Mammal("James Kahwai", "Black")
 mammal_two = Mammal("Sylvia Wanjiku", "Brown") 
 
 mammal_one.eat() # James Kahwai is eating
+dog_one.bark()
